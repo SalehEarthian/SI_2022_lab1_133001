@@ -2,5 +2,4 @@ milk x 5
 eggs x 15
 bread x 3
 oil x 2
-solt x 1
-
+solt x 2
