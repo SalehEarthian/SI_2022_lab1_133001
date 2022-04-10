@@ -1,0 +1,288 @@
+1. https://github.com/SalehEarthian
+2. master e novoto ime na default branch
+3. https://github.com/SalehEarthian/SI_2022_lab1_133001
+4. git clone https://github.com/SalehEarthian/SI_2022_lab1_133001
+vnesuvam username i PAT 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
+
+Cloning into 'SI_2022_lab1_133001'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+cd SI_2022_lab1_133001
+
+5. touch shopping_list.txt
+nano shopping_list.txt
+milk
+eggs
+bread
+oil
+solt
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Add 5 items to the shopping list"
+
+6. nano shopping_list.txt
+milk x 5
+eggs x 10
+bread x 3
+oil x 2
+solt x 1
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Add quantities to the items."
+
+7. git branch branch1
+git branch branch2
+
+8. git log
+commit b0832d38e68e07fc2fcfbb1649b116ef33641570 (HEAD -> master, branch2, branch
+1)
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:24:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 3ed79c53de5d827cd3354602bb48c9cc16a30f4e
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:22:34 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cf0cf6b9051bb3450d4fdaff360a077a2619c5ae (origin/master, origin/HEAD)
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:13:36 2022 +0200
+
+    Update README.md
+
+commit 11e263e94525b3328d095658e2ecee8e9f977cb8
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:12:51 2022 +0200
+
+    Update README.md
+
+commit 5a2001222fcd946653f650e9a20facf50a6b9c16
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:11:26 2022 +0200
+
+    Initial commit
+
+
+9. git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 652 bytes | 6.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/SalehEarthian/SI_2022_lab1_133001
+   cf0cf6b..b0832d3  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+10. git checkout branch1
+Switched to branch 'branch1'
+
+11. nano shopping_list.txt
+milk x 5
+eggs x 10
+bread x 3
+oil x 2
+solt x 2
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Change quantity of item #5"
+[branch1 0e5491b] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12. git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13. nano shopping_list.txt
+milk x 5
+eggs x 15
+bread x 3
+oil x 2
+solt x 1
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Change quantity of item #2"
+[master efb7d91] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14. git push --all origin
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 568 bytes | 29.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/SalehEarthian/SI_2022_lab1_133001
+   b0832d3..efb7d91  master -> master
+ * [new branch]      branch1 -> branch1
+ * [new branch]      branch2 -> branch2
+
+15. git checkout branch2
+Switched to branch 'branch2'
+
+16. nano shopping_list.txt
+milk x 5
+eggs x 10
+bread x 3
+olive oil x 2
+solt x 1
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Modify item #4"
+[branch2 19f8f11] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+17. git log
+commit 19f8f11867fef1c5d3106b935a2223d41c71941c (HEAD -> branch2)
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:56:27 2022 +0200
+
+    Modify item #4
+
+commit b0832d38e68e07fc2fcfbb1649b116ef33641570 (origin/branch2)
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:24:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 3ed79c53de5d827cd3354602bb48c9cc16a30f4e
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:22:34 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cf0cf6b9051bb3450d4fdaff360a077a2619c5ae
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:13:36 2022 +0200
+
+    Update README.md
+
+commit 11e263e94525b3328d095658e2ecee8e9f977cb8
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:12:51 2022 +0200
+
+    Update README.md
+
+commit 5a2001222fcd946653f650e9a20facf50a6b9c16
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:11:26 2022 +0200
+
+    Initial commit
+
+18. nano shopping_list.txt
+milk x 5
+eggs x 10
+bread x 3
+olive oil x 2
+solt x 1
+sugar x 20
+ctrl + o i ctrl + x
+git add shopping_list.txt
+git commit -m "Modify item #4 and add item #6"
+[branch2 91f71c1] Modify item #4 and add item #6
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+19. git log
+commit 91f71c169d6963a74ccf8d8a34d5fc7f16b96056 (HEAD -> branch2)
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 08:07:37 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 19f8f11867fef1c5d3106b935a2223d41c71941c
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:56:27 2022 +0200
+
+    Modify item #4
+
+commit b0832d38e68e07fc2fcfbb1649b116ef33641570 (origin/branch2)
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:24:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 3ed79c53de5d827cd3354602bb48c9cc16a30f4e
+Author: Saleh <sashe.stankovski@gmail.com>
+Date:   Sun Apr 10 07:22:34 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cf0cf6b9051bb3450d4fdaff360a077a2619c5ae
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:13:36 2022 +0200
+
+    Update README.md
+
+commit 11e263e94525b3328d095658e2ecee8e9f977cb8
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:12:51 2022 +0200
+
+    Update README.md
+
+commit 5a2001222fcd946653f650e9a20facf50a6b9c16
+Author: SalehEarthian <63200157+SalehEarthian@users.noreply.github.com>
+Date:   Sun Apr 10 07:11:26 2022 +0200
+
+    Initial commit
+
+
+20. git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'recursive' strategy.
+ shopping_list.txt | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+se pojavi poraka vo nano editor, ctrl+x za izlez.
+
+21. git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+se pojavuva konflikt
+
+otvoriv nano shopping_list.txt
+milk x 5
+eggs x 15
+bread x 3
+<<<<<<< HEAD
+oil x 2
+solt x 2
+=======
+olive oil x 2
+solt x 1
+sugar x 20
+>>>>>>> branch2
+
+editirav
+milk x 5
+eggs x 15
+bread x 3
+olive oil x 2
+solt x 2
+sugar x 20
+
+git add shopping_list.txt
+
+git merge --continue
+se pojavi poraka vo nano editor, ctrl+x za izlez.
+
+[master a665135] Merge branch 'branch2'
+
+
+22. git add 133001.txt
+git commit -m "Add docs"
+
+23. git push --all origin
+
+
