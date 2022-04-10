@@ -2,7 +2,7 @@
 2. master e novoto ime na default branch
 3. https://github.com/SalehEarthian/SI_2022_lab1_133001
 4. git clone https://github.com/SalehEarthian/SI_2022_lab1_133001
-vnesuvam username i PAT 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
+vnesuvam username i PAT 
 
 Cloning into 'SI_2022_lab1_133001'...
 remote: Enumerating objects: 6, done.
@@ -71,6 +71,8 @@ Date:   Sun Apr 10 07:11:26 2022 +0200
 
 
 9. git push -u origin master
+Username for 'https://github.com': SalehEarthian
+Password for 'https://SalehEarthian@github.com': 
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 4 threads
@@ -113,6 +115,8 @@ git commit -m "Change quantity of item #2"
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 14. git push --all origin
+Username for 'https://github.com': SalehEarthian
+Password for 'https://SalehEarthian@github.com': 
 Enumerating objects: 8, done.
 Counting objects: 100% (8/8), done.
 Delta compression using up to 4 threads
@@ -282,7 +286,23 @@ se pojavi poraka vo nano editor, ctrl+x za izlez.
 
 22. git add 133001.txt
 git commit -m "Add docs"
+[master 464a044] Add docs
+ 1 file changed, 288 insertions(+)
+ create mode 100644 133001.txt
+
 
 23. git push --all origin
+Username for 'https://github.com': SalehEarthian
+Password for 'https://SalehEarthian@github.com': 
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 3.14 KiB | 804.00 KiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/SalehEarthian/SI_2022_lab1_133001
+   b0832d3..91f71c1  branch2 -> branch2
+   efb7d91..464a044  master -> master
 
 
