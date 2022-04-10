@@ -1,6 +1,6 @@
 milk x 5
 eggs x 10
 bread x 3
-oil x 2
+olive oil x 2
 solt x 1
 
